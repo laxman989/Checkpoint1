@@ -5,8 +5,9 @@
 .home {
     width: 100vw;
     height: 90vh;
-    background: url('images/bg3.jpg') no-repeat center;
+    background: url('images/bg4.jpg') no-repeat center;
     background-size: cover;
+    animation: country-bg-animate 10s infinite ease-in-out;
 }
 .home > .home-content {
     width: 100vw;
@@ -35,6 +36,24 @@
     }
     76%,100% {
         content: 'France';
+    }
+}
+@keyframes country-bg-animate {
+    0%,25% {
+        background: url('https://images.unsplash.com/photo-1530959106156-50f49c30932d?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+        background-size: cover;
+    }
+    26%,50% {
+        background: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+        background-size: cover;
+    }
+    51%,75% {
+        background: url('https://images.unsplash.com/photo-1501952476817-d7ae22e8ee4e?auto=format&fit=crop&q=80&w=1769&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+        background-size: cover;
+    }
+    76%,100% {
+        background: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=1773&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+        background-size: cover;
     }
 }
 
