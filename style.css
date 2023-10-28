@@ -1,0 +1,75 @@
+.navbar {
+    width: 100vw;
+    height: 10vh;
+}
+.home {
+    width: 100vw;
+    height: 90vh;
+    background: url('/images/bg4.jpg') no-repeat center;
+    background-size: cover;
+    animation: country-bg-animate 10s infinite ease-in-out;
+}
+.home > .home-content {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.3);
+}
+.home > .home-content >.content {
+    color: white;
+}
+
+.country-name::after {
+    content: 'United States';
+    color: #FFC107;
+    animation: country-name-animate 10s infinite ease-in-out;
+}
+
+@keyframes country-name-animate {
+    0%,25% {
+        content: 'United States';
+    }
+    26%,50% {
+        content: 'India';
+    }
+    51%,75% {
+        content: 'Germany';
+    }
+    76%,100% {
+        content: 'France';
+    }
+}
+@keyframes country-bg-animate {
+    0%,25% {
+        background: url('/images/bg4.jpg') no-repeat center;
+        background-size: cover;
+    }
+    26%,50% {
+        background: url('/images/bg3.jpg') no-repeat center;
+        background-size: cover;
+    }
+    51%,75% {
+        background: url('/images/bg2.jpg') no-repeat center;
+        background-size: cover;
+    }
+    76%,100% {
+        background: url('/images/bg1.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.btn:hover {
+    background-color: #FFC107;
+}
+a#navbarDropdown.nav-link.text-dark.fw-bold.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu {
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.container {
+    background-color: white;
+}
